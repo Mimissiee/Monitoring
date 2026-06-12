@@ -1,0 +1,122 @@
+.sidebar {
+    width: 220px;
+    min-width: 220px;
+    background: var(--surface);
+    border-right: 0.5px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.sidebar-logo {
+    padding: 16px;
+    border-bottom: 0.5px solid var(--border);
+}
+
+.logo-title {
+    display: block;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--text);
+}
+
+.logo-sub {
+    display: block;
+    font-size: 11px;
+    color: var(--text-hint);
+    margin-top: 2px;
+}
+
+.sidebar-nav {
+    flex: 1;
+    padding: 8px 0;
+    overflow-y: auto;
+}
+
+.nav-section {
+    font-size: 11px;
+    color: var(--text-hint);
+    padding: 12px 16px 4px;
+    letter-spacing: 0.04em;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    font-size: 13px;
+    color: var(--text-muted);
+    text-decoration: none;
+    border-left: 2px solid transparent;
+    transition: all .15s;
+}
+
+.nav-item:hover {
+    background: var(--gray-50);
+    color: var(--text);
+}
+
+.nav-item.active {
+    background: var(--blue-50);
+    color: var(--blue-600);
+    border-left: 2px solid var(--blue-400);
+    font-weight: 500;
+}
+
+.sidebar-user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    border-top: 0.5px solid var(--border);
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--blue-50);
+    color: var(--blue-600);
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.user-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.user-nama {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.user-role {
+    display: block;
+    font-size: 11px;
+    color: var(--text-hint);
+}
+
+.btn-logout {
+    font-size: 16px;
+    color: var(--text-hint);
+    text-decoration: none;
+    padding: 4px;
+    border-radius: 4px;
+    transition: color .15s;
+}
+
+.btn-logout:hover {
+    color: var(--red-400);
+}

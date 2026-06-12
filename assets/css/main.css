@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --blue-50:   #E6F1FB;
+    --blue-400:  #378ADD;
+    --blue-600:  #185FA5;
+    --teal-50:   #E1F5EE;
+    --teal-400:  #1D9E75;
+    --teal-600:  #0F6E56;
+    --purple-50: #EEEDFE;
+    --purple-400:#7F77DD;
+    --purple-600:#534AB7;
+    --amber-50:  #FAEEDA;
+    --amber-400: #EF9F27;
+    --amber-600: #854F0B;
+    --red-50:    #FCEBEB;
+    --red-400:   #E24B4A;
+    --red-600:   #A32D2D;
+    --green-50:  #EAF3DE;
+    --green-400: #639922;
+    --green-600: #3B6D11;
+    --gray-50:   #F1EFE8;
+    --gray-100:  #D3D1C7;
+    --gray-400:  #888780;
+    --gray-600:  #5F5E5A;
+
+    --bg:        #f3f4f6;
+    --surface:   #ffffff;
+    --border:    #e5e7eb;
+    --text:      #1a1a1a;
+    --text-muted:#6b7280;
+    --text-hint: #9ca3af;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.topbar {
+    height: 48px;
+    background: var(--surface);
+    border-bottom: 0.5px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    flex-shrink: 0;
+}
+
+.topbar-title {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.content {
+    padding: 20px;
+    flex: 1;
+}
+
+a {
+    color: var(--blue-400);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--blue-600);
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
